@@ -9,19 +9,47 @@ export default function Header(){
         let data = '';
         switch (section) {
             case 0:
-                data = "";
+                data = "Bienvenido a mi Web de presentación";
                 break;
             case 1:
-                data = "Beneficios del Yoga";
+                data = (
+                    <div className="text-start">
+                        -Python<br></br>
+                        -JavaScript<br></br>
+                        -Java<br></br>
+                        -SQL<br></br>
+                    </div>
+                );
                 break;
             case 2:
-                data = 'Razones para hacer Yoga';
+                data = (
+                    <div className="text-start">
+                        -Django<br></br>
+                        -React<br></br>
+                        -Bootstrap<br></br>
+                        -Tailwind<br></br>
+                    </div>
+                );
                 break;
             case 3:
-                data = 'Somos una empresa líder...';
+                data = (
+                    <div className="text-start m-2">
+                        -tlfno: 677 367 124<br></br>
+                        -Email: projectwali272@gmail.com<br></br>
+                        <center>
+                            <div className='m-2 p-2 text-center bg-emerald-700 text-emerald-200 w-1/3 hover:w-1/2 duration-150 rounded-md hover:bg-emerald-800 hover:text-emerald-300'>
+                                <a className="hover:bg-emerald-400 hover:text-emerald-950 rounded-md p-4" target='_blank' href="https://github.com/LucasWalica">Github</a>    
+                            </div>
+                            <div className='m-2 p-2 text-center bg-emerald-700 text-emerald-200 w-1/3 hover:w-1/2 duration-150 rounded-md hover:bg-emerald-800 hover:text-emerald-300'>
+                                <a className="hover:bg-emerald-400 hover:text-emerald-950 rounded-md p-4"  target="_blank" href="https://www.linkedin.com/in/lucas-walica/">Linkedin</a>
+                            </div>
+                            <div className='m-2 p-2 text-center bg-emerald-700 text-emerald-200 w-1/3 hover:w-1/2 duration-150 rounded-md hover:bg-emerald-800 hover:text-emerald-300'>
+                            <a className="hover:bg-emerald-400 hover:text-emerald-950 rounded-md p-4" target="_blank" href="https://www.instagram.com/usually_3dprinted/">3D</a>
+                            </div>
+                        </center>
+                    </div>
+                );
                 break;
-            default:
-                data = 'Bienvenido a nuestra página web';
         }
         setContent(data);
     }
@@ -38,38 +66,23 @@ export default function Header(){
                     <h1 className="text-4xl font-r3 text-center justify-center m-4 border-2 rounded-se-3xl border-emerald-700 bg-emerald-200">
                         Lucas Walica
                     </h1>
-                    <div className="m-2 justify-center content-center grid grid-cols-2">
+                    <div className="m-2 justify-center content-center grid lg:grid-cols-2 sm:grid-cols-1">
                         <center>
                             <img src={personalPhoto} className='max-h-96 rounded-full'></img>
                         </center>
                         <div className='text-emerald-200 border-2 m-4 rounded-lg justify-center content-center border-emerald-400 bg-emerald-950'>
-                            <h1 className='text-lg text-center content-center flex justify-center p-2 m-2'>Programador Web</h1>
+                            <h1 className='text-lg text-center content-center flex justify-center p-2 m-2'>Presentacion</h1>
                             <hr></hr>
-                            <div className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
-                                <h1>Lenguajes de Programación:</h1>
-                                <ul className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
-                                    <li>-Python</li>
-                                    <li>-Java</li>
-                                    <li>-JavaScript</li>
-                                    <li>-SQL</li>
-                                </ul>
-                            </div>
-                            <hr></hr>
-                            <div className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
-                                <h1>Tecnologías: </h1>
-                                <ul className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
-                                    <li>-Django</li>
-                                    <li>-React</li>
-                                    <li>-Tailwind & Bootstrap</li>
-                                </ul>
+                            <div className='m-2 p-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4'>
+                                Mi Nombre es lucas Walica soy un apasionado de la programacion e impresion 3D, estudie el primer año de automatizacion y robotica industrial pero decidi pasarme a desarrollo multiplataforma, ahora estoy de vacaciones y quiero empezar a hacer proyectos personales
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='bg-emerald-950 m-4 rounded-lg'>
-                    <div className='grid grid-cols-3 text-center m-4 border-2 text-emerald-300'>
+                <div className='bg-emerald-950 m-4 rounded-lg h-72'>
+                    <div className='grid grid-cols-3 text-center m-4 text-emerald-300'>
                         <div onClick={() => loadData(1)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
-                            Lenguajes de Programacion
+                            Lenguajes
                         </div>
                         <div onClick={() => loadData(2)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
                             Tecnologias
@@ -78,9 +91,10 @@ export default function Header(){
                             Contacto
                         </div>
                     </div>
-                    <div className='border-2 m-4 p-2 text-center'>
+                    <div className='m-4 text-center text-emerald-50'>
                         {content}
                     </div>
+
                 </div>
             </div>
         </div>
