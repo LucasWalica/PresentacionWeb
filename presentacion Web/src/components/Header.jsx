@@ -71,30 +71,44 @@ export default function Header(){
                             <img src={personalPhoto} className='max-h-96 rounded-full'></img>
                         </center>
                         <div className='text-emerald-200 border-2 m-4 rounded-lg justify-center content-center border-emerald-400 bg-emerald-950'>
-                            <h1 className='text-lg text-center content-center flex justify-center p-2 m-2'>Presentacion</h1>
+                            <h1 className='text-lg text-center content-center flex justify-center p-2 m-2'>Presentación</h1>
                             <hr></hr>
                             <div className='m-2 p-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4'>
-                                Mi Nombre es lucas Walica soy un apasionado de la programacion e impresion 3D, estudie el primer año de automatizacion y robotica industrial pero decidi pasarme a desarrollo multiplataforma, ahora estoy de vacaciones y quiero empezar a hacer proyectos personales
+                                Mi nombre es Lucas Walica, llevo año y medio programando por mi cuenta y quiero empezar a hacer mis primeros proyectos.
+                                Estoy estudiando Desarrollo de aplicaciones multiplataforma, aunque también estoy muy interesado en robótica e impresión 3D.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='bg-emerald-950 m-4 rounded-lg h-72'>
+                <div className='bg-emerald-950 m-4 p-2 rounded-lg'>
                     <div className='grid grid-cols-3 text-center m-4 text-emerald-300'>
-                        <div onClick={() => loadData(1)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
+                        <div onClick={() => loadData(1)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 duration-150 hover:text-emerald-400'>
                             Lenguajes
                         </div>
-                        <div onClick={() => loadData(2)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
-                            Tecnologias
+                        <div onClick={() => loadData(2)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 duration-150 hover:text-emerald-400'>
+                            Tecnologías
                         </div>
-                        <div onClick={() => loadData(3)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 hover:pl-4 hover:pr-4 duration-150 hover:text-emerald-400'>
+                        <div onClick={() => loadData(3)} className='m-2 content-center text-lg bg-emerald-400 rounded-md text-emerald-950 font-r4 hover:bg-emerald-600 duration-150 hover:text-emerald-400'>
                             Contacto
                         </div>
                     </div>
-                    <div className='m-4 text-center text-emerald-50'>
-                        {content}
+                    <div className='m-4 text-center text-emerald-50 h-52 bg-emerald-600 rounded-md content-center'>
+                        <div className='m-2'>
+                            {content}
+                        </div>
                     </div>
-
+                    <div className='bg-emerald-700 rounded-lg m-2'>
+                        <center>
+                            <h1 className='text-center text-white text-xl font-r3 bg-emerald-700 rounded-md w-1/2'>
+                                Bueno, Barato y Bonito
+                            </h1>
+                        </center>
+                        <div className='content-center'>
+                            <h1 className='text-emerald-100 m-2 font-r4'>
+                                Si quieres Páginas web de presentación, cartas para bares/restaurantes online con QR, blogs, gestores web, otros proyectos web, contactame.
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
